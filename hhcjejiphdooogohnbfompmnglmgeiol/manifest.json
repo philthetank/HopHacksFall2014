@@ -13,11 +13,9 @@
       "run_at": "document_end"
    } ],
    "description": "Fix the web one word at a time.",
-   "key": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDAo5DquWOVb2yo6YoU4c7OcjfYUcErPBgnl6+jrYjs4P1HQw73VIYX3g9BqvmyRVWkyshDp1gVaNquXFTaYWOJi6iSNMt1Qi9NXW0U1xOUrrKnk91L59uPndTsxhbYixWC2YQbsJ3/x1hDwfQUOaZN18PEM58byrm5xSucIAw8OwIDAQAB",
    "manifest_version": 2,
    "name": "Word Filter",
    "options_page": "app/options.html",
    "permissions": [ "http://*/*", "https://*/*" ],
-   "update_url": "https://clients2.google.com/service/update2/crx",
    "version": "7.3"
 }
