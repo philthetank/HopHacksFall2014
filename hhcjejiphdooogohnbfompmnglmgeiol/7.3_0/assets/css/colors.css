@@ -1,0 +1,129 @@
+/* Colors **************************************
+ **
+ *
+ *
+ **/
+.black,
+.blue,
+.green,
+.red,
+.black:hover,
+.blue:hover,
+.green:hover,
+.red:hover {
+  color:       #FFF;
+  text-shadow: 0 1px 0 #333;
+}
+.orange {
+  color:       #333;
+  text-shadow: 0 1px 0 #E3E3E3;
+}
+.orange:hover {
+  color:       #000;
+  text-shadow: 0 1px 0 #E3E3E3;
+}
+
+
+.white {
+  background:       #FFF;
+  background-color: #FFF;
+}
+.white:hover {
+  background:       #FFF;
+  background-color: #FFF;
+}
+.white:active {
+  background:       #FFF;
+  background-color: #FFF;
+}
+
+.black {
+  background:       #333;
+  background-color: #333;
+}
+.black:hover {
+  background:       #424141;
+  background-color: #424141;
+}
+.black:active {
+  background:       #222;
+  background-color: #222;
+}
+
+.grey {
+  background:       #DDD;
+  background-color: #DDD;
+}
+.grey:hover {
+  background:       #E7E6E6;
+  background-color: #E7E6E6;
+}
+.grey:active {
+  background:       #D3D3D3;
+  background-color: #D3D3D3;
+}
+
+.red {
+  background:       #D53D2C;
+  background-color: #D53D2C;
+}
+.red:hover {
+  background:       #D55344;
+  background-color: #D55344;
+}
+.red:active {
+  background:       #BE3727;
+  background-color: #BE3727;
+}
+
+.green {
+  background:       #3DBB38;
+  background-color: #3DBB38;
+}
+.green:hover {
+  background:       #5BBA57;
+  background-color: #5BBA57;
+}
+.green:active {
+  background:       #309E2C;
+  background-color: #309E2C;
+}
+
+.blue {
+  background:       #00ACEE;
+  background-color: #00ACEE;
+}
+.blue:hover {
+  background:       #3EBFF1;
+  background-color: #3EBFF1;
+}
+.blue:active {
+  background:       #0290C7;
+  background-color: #0290C7;
+}
+
+.orange {
+  background:       #FAA226;
+  background-color: #FAA226;
+}
+.orange:hover {
+  background:       #F6AC44;
+  background-color: #F6AC44;
+}
+.orange:active {
+  background:       #E29324;
+  background-color: #E29324;
+}
+
+.yellow {
+  background:       #FFFF00;
+  background-color: #FFFF00;
+}
+.yellow:hover {
+  background:       #FFFF00;
+  background-color: #FFFF00;
+}
+.yellow:active {
+  background:       #FFFF00;
+  background-color: #FFFF00;
+}

@@ -1,0 +1,197 @@
+<html>
+  <head>
+  <link href="misc.css" rel="stylesheet">
+  </head>
+  <body class="row">
+<div class="show-main">
+<div class="col-2">
+  <div class="col-12">
+    <h1>
+      Title
+      <small class="tagline">
+        Tag line.
+      </small>
+    </h1>
+  </div>
+  <ul id="options" class="row">
+    <li id="main" selected>
+      <h4>Options</h4>
+    </li>
+    <li id="filters">
+      <h4>Filters</h4>
+    </li>
+    <li id="blacklist">
+      <h4>Black List</h4>
+    </li>
+    <li id="Advance">
+      <h4>Advance</h4>
+    </li>
+  </ul>
+</div>
+  <div class="col-8 show-main" style="border-bottom: 1px solid #eee;">
+    <h1 id="optionName">
+      Title
+    </h1>
+  </div>
+<div id="mainDisplay" class="col-8">
+main
+<hr />
+</div>
+</div>
+
+<!-- POPUP -->
+<div class="show-popup">
+<div class="row"  style="border-bottom: 1px solid #eee;">
+  <ul id="popupOptions" class="row">
+    <li id="main">
+      <h3>Options</h3>
+    </li>
+    <li id="filters">
+      <h3>Filters</h3>
+    </li>
+    <li id="blacklist">
+      <h3>Black List</h3>
+    </li>
+    <li id="Advance">
+      <h3>Advance</h3>
+    </li>
+  </ul>
+</div>
+<div id="popupDisplay" class="block">
+popup
+<hr />
+</div>
+</div>
+<!-- /POPUP -->
+
+
+<!-- ******************************* -->
+<div id="mainContent" hidden>
+  <div class="row">
+    <div class="col-2">
+      State
+    </div>
+    <div class="col-3">
+      <button class="green">On</button>
+      <button class="red disabled">Off</button>
+    </div>
+  </div>
+  <div class="row">
+    <div class="row">
+      <div class="col-2">
+        Filter:
+      </div>
+      <div class="col-4">
+        <input type="text"></input>
+      </div>
+      <div class="col-4">
+        <input type="text"></input>
+      </div>
+    </div>
+    <div class="row">
+      <div class="push2 col-8">
+        <button class="green">Save</button>
+        <button class="orange">Cancel</button>
+        <button class="red">Clear All</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ******************************* -->
+<div id="filters" hidden>
+  <div class="row">
+    <div class="col-2">
+      Filter:
+    </div>
+    <div class="col-8">
+      <input type="text" class="block"></input>
+    </div>
+  </div>
+  <div class="row">
+    <div class="push2 col-8">
+      <button class="green">Save</button>
+      <button class="orange">Cancel</button>
+      <button class="red">Clear All</button>
+    </div>
+  </div>
+  <div class="row">
+    <div class="row">
+      Review
+    </div>
+    <div class="row">
+      {{FILTER LIST}}
+    </div>
+  </div>
+</div>
+
+
+<!-- ******************************* -->
+<div id="blacklist" hidden>
+  <div class="row">
+    <div class="col-2">
+      URL:
+    </div>
+    <div class="col-8">
+      <input type="text" class="block"></input>
+    </div>
+  </div>
+  <div class="row">
+    <div class="push2 col-8">
+      <button class="green">Save</button>
+      <button class="orange">Cancel</button>
+      <button class="red">Clear All</button>
+    </div>
+  </div>
+  <div class="row">
+    <div class="row">
+      Review
+    </div>
+    <div class="row">
+      {{BLACK LIST}}
+    </div>
+  </div>
+</div>
+
+<!-- ******************************* -->
+<div id="advance" hidden>
+  <div class="row">
+    <div class="row">
+      Console
+    </div>
+    <div class="row">
+      <textarea id="console" class="block"></textarea>
+    </div>
+    <div class="row">
+      <div class="col-3">
+        <button class="green">Save</button>
+      </div>
+      <div class="col-3">
+        <button class="orange">Cancel</button>
+      </div>
+      <div class="col-3">
+        <button class="red tooltip bottom" data-tip="This will delete all saved settings!">
+          Clear All
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-2">
+      Allow Non-Obtrusive Ads?
+    </div>
+    <div class="col-8">
+      <button class="green">On</button>
+      <button class="red">Off</button>
+    </div>
+  </div>
+</div>
+
+<script>
+var mainDisplay = document.getElementById('mainDisplay'),
+    mainContent = document.getElementById('mainContent');
+mainDisplay.innerHTML = mainContent.innerHTML;
+</script>
+
+  </body>
+</html>

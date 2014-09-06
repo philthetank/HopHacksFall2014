@@ -1,0 +1,79 @@
+/*Mon, 07 Jul 2014 06:26:47 -0700 */
+
+/* Viewport ************************************
+ **
+ * Display
+ **/
+display {
+padding: 0;
+float:left;
+box-sizing:border-box;
+}
+
+/**
+   *  Selection
+   **/
+display selection {
+display:table;
+position:relative;
+float:left;
+width:80%;
+margin:.75em 0 1em;
+padding:0;
+font-size:2em;
+font-weight:400;
+letter-spacing:1px;
+text-transform:capitalize;
+/*text-shadow:.1em .1em .1em #DDD;*/
+}
+
+display selection:hover {
+text-shadow:.1em .1em .1em #EEE;
+}
+
+/**
+   *
+   **/
+display content {
+padding: 1.75em 0em 0em 0em;
+border-top:1px solid #eee;
+}
+
+/* Responsive Styles ***************************
+ **
+ * Main
+ **/
+@media only screen and (min-width: 40em) {
+display {
+width:80%;
+}
+
+display selection {
+}
+
+display content {
+width:100%;
+display:inline-block;
+}
+}
+
+/**
+ * Popup
+ **/
+@media only screen and (max-width: 40em) {
+display {
+max-width:40em;
+min-width:40em;
+}
+
+display selection {
+display:none;
+visibility:hidden;
+}
+
+display content {
+display:block;
+width:100%;
+margin-left:3.5em;
+}
+}

@@ -1,0 +1,50 @@
+<html>
+<head>
+
+</head>
+<body>
+
+
+<div class="checkbox">
+<label>
+ <input type="checkbox"></input>
+<span>test</span>
+</label>
+</div>
+
+<div class="checkbox">
+<label>
+ <input type="checkbox" disabled></input>
+<span>test</span>
+</label>
+</div>
+<hr />
+
+    <h1>State Classes</h1>
+      Disabled
+    <hr />
+    <h1> Buttons </h1>
+      <button class="">Button...</button>
+      <button class="red">Button...</button>
+      <button class="green">Button...</button>
+      <button class="blue">Button...</button>
+      <button class="black">Button...</button>
+      <button class="white">Button...</button>
+      <button class="grey">Button...</button>
+      <button class="yellow">Button...</button>
+      <button class="orange">Button...</button>
+    <hr />
+    <h1>Select</h1>
+      <select>
+        <option class="red" value="volvo">Volvo</option>
+        <option class="disabled" value="saab">Saab</option>
+        <option value="mercedes">Mercedes</option>
+        <option value="audi">Audi</option>
+      </select> 
+    </hr>
+   
+   
+    <hr />
+    <h1> Labels </h1>
+</body>
+</html>
