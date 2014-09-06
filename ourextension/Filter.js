@@ -9,8 +9,11 @@ function httpGet( theUrl )
 
 chrome.tabs.getSelected( null, function(tab)
 {
-	var div = document.createElement("div");
-	var json = JSON.parse( httpGet( tab.url ) );
-	div.innerHTML = json["content"];
-	document.body.appendChild( div );
-});
+ 	var div = document.createElement("div");
+ 	var json = JSON.parse( httpGet( tab.url ) );
+ 	div.innerHTML = json["content"];
+ 	document.body.appendChild( div );
+//  	var readability = new readability();
+ });
+
+// chrome.tabs.executeScript(null, {file: "/assets/scripts/core.js"});

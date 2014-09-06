@@ -12,6 +12,6 @@
    "description": "Fix the web one word at a time.",
    "manifest_version": 2,
    "name": "Citation Filter",
-   "permissions": [ "http://*/*", "https://*/*", "tabs" ],
+   "permissions": [ "http://*/*", "https://*/*", "tabs", "activeTab" ],
    "version": "0.1"
 }
