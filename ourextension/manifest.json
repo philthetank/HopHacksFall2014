@@ -1,0 +1,12 @@
+{
+   "content_scripts": [ {
+      "js": [ "Filter.js" ],
+      "matches": [ "http://*/*", "https://*/*" ],
+      "run_at": "document_end"
+   } ],
+   "description": "Fix the web one word at a time.",
+   "manifest_version": 2,
+   "name": "Word Filter",
+   "permissions": [ "http://*/*", "https://*/*" ],
+   "version": "0.1"
+}
