@@ -1,12 +1,17 @@
 {
+   "browser_action": {
+      "default_icon": "Logo.png",
+      "default_popup": "options.html",
+      "default_title": "Citation Filter"
+      },
    "content_scripts": [ {
       "js": [ "Filter.js" ],
-      "matches": [ "http://*/*", "https://*/*" ],
+      "matches": [ "http://*/*", "https://*/*"],
       "run_at": "document_end"
    } ],
    "description": "Fix the web one word at a time.",
    "manifest_version": 2,
    "name": "Citation Filter",
-   "permissions": [ "http://*/*", "https://*/*" ],
+   "permissions": [ "http://*/*", "https://*/*", "tabs" ],
    "version": "0.1"
 }
