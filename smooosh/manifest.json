@@ -1,22 +1,20 @@
 {
-   "browser_action": {
-      "default_icon": "Logo.png",
-      "default_title": "Sm(ooo)sh"
-      },
-      
+	"browser_action": {
+		"default_icon": "Logo.png",
+		"default_title": "Sm(ooo)sh"
+	},
+	  
 	"background": {
 		"scripts": ["filter.js"],
 		"persistent": false
 	},
 
-   "description": "Compress your citations for easy reading!",
-   "manifest_version": 2,
-   "name": "Sm(ooo)sh",
-   "permissions": [ 
-	   "http://*/*", 
-	   "https://*/*", 
-	   "activeTab" ],
-   "version": "0.2"
+	"description": "Smooosh scholarly articles and start skimming swiftly!",
+	"manifest_version": 2,
+	"name": "Sm(ooo)sh",
+	"permissions": [ 
+		"http://*/*", 
+		"https://*/*", 
+		"activeTab" ],
+	"version": "1.0"
 }
-
-
