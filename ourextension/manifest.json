@@ -5,8 +5,7 @@
       },
       
 	"background": {
-		"scripts": ["filter.js"],
-		"css": ["basic.css"],
+		"scripts": ["filter.js", "readability.css"],
 		"persistent": false
 	},
 
