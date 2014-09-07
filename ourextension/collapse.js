@@ -1,25 +1,23 @@
 ( function () {
-	var citationz = document.getElementById("readability-content");
-	var text = citationz.innerHTML; 
+	var content = document.getElementById("readability-content");
+	var extracted = content.innerHTML.substr(index); 
 	var index = 0;
-	var str = text.substr(index);
-	var mine = str;
-//  	var myreg = /\((.*?\b)(\d|\.).*?((\d|\.)[a-z]?)\)/g;
-	var myreg = /(\(([^\)]*)(((\d{4}|([p][a][r][a]\.[[:space:]]\d+)|([p]\.[[:space:]]\d+))[a-z]?|\.))\))/g;
+	var collapse_content = extracted;
 
-	while((resultz = myreg.exec(str)) !== null){
-		//var innerReg = /(.*?)/;
-		//if ( innerReg.exec(resultz[0]) ) {	
+	var cit_regex = /(\(([^\)]*)(((\d{4}|([p][a][r][a]\.[[:space:]]\d+)|([p]\.[[:space:]]\d+))[a-z]?|\.))\))/g;
+
+	while((cit_match = cit_regex.exec(extracted)) !== null){
+	
 			var str = str.substr(index);
-			var sub = resultz[0];
+			var sub = cit_match[0];
 			var len = sub.length;
-			var yus = sub.substr(1, len-2);
-			index = myreg.lastindex;
-			var nnew = "<a title=\"" + yus + "\">(...)</a>" + " ";
-			mine = mine.replace(resultz[0], nnew);
-		//}
+			var strip_paren = sub.substr(1, len-2);
+			index = cit_regex.lastindex;
+			var format = "<a title=\"" + strip_paren + "\">(...)</a>" + " ";
+			collapse_content = collapse_content.replace(cit_match[0], format);
+
 	}
 
-	citationz.innerHTML = mine;
+	content.innerHTML = collapse_content;
 
 })();

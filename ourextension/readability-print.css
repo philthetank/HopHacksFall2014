@@ -17,8 +17,7 @@ embed, object {
 #readInner.margin-x-wide {width:70% !important;}
 
 #readTools {
-	display: block !important;
-	color: #000 !important;
+	display: none !important;
 }
 
 #readFooter {
@@ -47,7 +46,7 @@ embed, object {
 
 #rdb-footer-left {
     width: auto !important;
-    display: none !important;
+    display: block !important;
     float: none !important;
     font-family: "Adobe Caslon Pro", "Hoefler Text", Georgia, Garamond, serif;
 }
@@ -55,8 +54,7 @@ embed, object {
 #rdb-footer-right {
     display: none !important;
 }
-
-/* 
+/*
 #readFooter #arc90-logo, #readFooter #readability-logo {
     background-image: none !important;
     text-indent: 0 !important;
@@ -75,7 +73,7 @@ embed, object {
 #footer-twitterLink {
     display: none;
 }
- */
+*/
 
 #readFooter span.version {
 	display: none;
