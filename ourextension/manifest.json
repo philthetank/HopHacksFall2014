@@ -1,7 +1,7 @@
 {
    "browser_action": {
       "default_icon": "Logo.png",
-      "default_title": "Citation Filter"
+      "default_title": "Sm(ooo)sh"
       },
       
 	"background": {
@@ -9,14 +9,14 @@
 		"persistent": false
 	},
 
-   "description": "Fix the web one word at a time.",
+   "description": "Compress your citations for easy reading!",
    "manifest_version": 2,
-   "name": "Citation Filter",
+   "name": "Sm(ooo)sh",
    "permissions": [ 
 	   "http://*/*", 
 	   "https://*/*", 
 	   "activeTab" ],
-   "version": "0.1"
+   "version": "0.2"
 }
 
 
