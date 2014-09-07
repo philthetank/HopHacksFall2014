@@ -114,7 +114,7 @@ var readability = {
         innerDiv.id             = "readInner";
 
         /* Apply user-selected styling */
-        var readStyle = "readStyle"
+        var readStyle = "style-newspaper"
         document.body.className = readStyle;
         document.dir            = readability.getSuggestedDirection(articleTitle.innerHTML);
 
