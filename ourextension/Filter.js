@@ -9,9 +9,30 @@ function httpGet( theUrl )
 
 chrome.tabs.getSelected( null, function(tab)
 {
- 	var div = document.createElement("div");
+	//title
+	var divTitle = document.createElement("div");
  	var json = JSON.parse( httpGet( tab.url ) );
+ 	divTitle.innerHTML = json["title"];
+	divTitle.style.fontSize = "32px";
+	divTitle.style.fontWeight = "bold";
+	if(divTitle.innerHTML != "undefined")
+	{
+		document.body.appendChild( divTitle );
+	}
+	
+// 	document.body.appendChild( div );
+
+ 	var div = document.createElement("div");
+ 	//var json = JSON.parse( httpGet( tab.url ) );
  	div.innerHTML = json["content"];
+	if(div.innerHTML == "undefined")
+	{
+		div.innerHTML = "Sorry, Could Not Complete Request";
+	}
+	else
+	{
+		div.style.width = "700px";
+	}
  	document.body.appendChild( div );
 //  	var readability = new readability();
  });
