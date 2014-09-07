@@ -6,6 +6,7 @@
       
 	"background": {
 		"scripts": ["filter.js"],
+		"css": ["basic.css"],
 		"persistent": false
 	},
 
